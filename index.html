@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy GF's Day ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="petals-bg"></div>
+
+<section class="screen welcome" id="welcome">
+  <div class="little-heart">♡</div>
+  <p class="eyebrow">A little surprise for you</p>
+  <h1>Happy GF's Day,<br><span>my Mal</span> ♡</h1>
+  <p class="intro">I made this little garden of flowers and words just for you.</p>
+  <button id="openBtn">Open your surprise ♡</button>
+</section>
+
+<section class="screen bouquet-screen hidden" id="bouquetSection">
+  <p class="eyebrow">Flowers chosen just for you</p>
+  <h2>A bouquet that says<br><span>what words can't</span></h2>
+
+  <div class="bouquet-card">
+    <svg class="bouquet-svg" viewBox="0 0 520 570" aria-label="A bouquet of cherry blossoms, lavender and crocus">
+      <defs>
+        <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#fffaff"/>
+          <stop offset="1" stop-color="#d8c2e8"/>
+        </linearGradient>
+        <linearGradient id="cherryPetal" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ffe1ef"/>
+          <stop offset="1" stop-color="#e99cc5"/>
+        </linearGradient>
+        <linearGradient id="lav" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#c7a6ef"/>
+          <stop offset="1" stop-color="#7850ad"/>
+        </linearGradient>
+        <linearGradient id="crocus" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#dfc6ff"/>
+          <stop offset="1" stop-color="#8053b0"/>
+        </linearGradient>
+        <filter id="shadow">
+          <feDropShadow dx="0" dy="12" stdDeviation="10" flood-opacity=".18"/>
+        </filter>
+      </defs>
+
+      <!-- stems -->
+      <g stroke="#5f825f" stroke-width="7" stroke-linecap="round" fill="none">
+        <path d="M260 465 Q245 300 178 130"/>
+        <path d="M260 465 Q285 300 360 115"/>
+        <path d="M260 465 Q210 325 115 210"/>
+        <path d="M260 465 Q315 330 425 205"/>
+        <path d="M260 465 Q260 280 260 90"/>
+      </g>
+
+      <!-- leaves -->
+      <g fill="#769b70">
+        <ellipse cx="175" cy="315" rx="18" ry="58" transform="rotate(-42 175 315)"/>
+        <ellipse cx="347" cy="320" rx="18" ry="62" transform="rotate(42 347 320)"/>
+        <ellipse cx="205" cy="375" rx="16" ry="52" transform="rotate(-55 205 375)"/>
+        <ellipse cx="318" cy="385" rx="16" ry="52" transform="rotate(55 318 385)"/>
+      </g>
+
+      <!-- main cherry blossom branch -->
+      <g fill="none" stroke="#76565b" stroke-width="10" stroke-linecap="round">
+        <path d="M260 255 Q230 185 175 125 Q145 95 118 72"/>
+        <path d="M215 180 Q250 145 285 100"/>
+        <path d="M175 125 Q160 92 165 55"/>
+        <path d="M290 105 Q335 75 370 65"/>
+      </g>
+
+      <!-- cherry blossoms -->
+      <g>
+        <!-- blossom 1 -->
+        <g transform="translate(112 68)">
+          <circle r="24" fill="#f2c4da"/>
+          <g fill="url(#cherryPetal)">
+            <ellipse cy="-28" rx="25" ry="34"/>
+            <ellipse cx="27" cy="-9" rx="25" ry="34" transform="rotate(72)"/>
+            <ellipse cx="17" cy="25" rx="25" ry="34" transform="rotate(144)"/>
+            <ellipse cx="-17" cy="25" rx="25" ry="34" transform="rotate(216)"/>
+            <ellipse cx="-27" cy="-9" rx="25" ry="34" transform="rotate(288)"/>
+          </g>
+          <circle r="10" fill="#f6d36d"/>
+        </g>
+
+        <!-- blossom 2 -->
+        <g transform="translate(166 55) scale(.72)">
+          <circle r="24" fill="#f2c4da"/>
+          <g fill="url(#cherryPetal)">
+            <ellipse cy="-28" rx="25" ry="34"/>
+            <ellipse cx="27" cy="-9" rx="25" ry="34" transform="rotate(72)"/>
+            <ellipse cx="17" cy="25" rx="25" ry="34" transform="rotate(144)"/>
+            <ellipse cx="-17" cy="25" rx="25" ry="34" transform="rotate(216)"/>
+            <ellipse cx="-27" cy="-9" rx="25" ry="34" transform="rotate(288)"/>
+          </g>
+          <circle r="10" fill="#f6d36d"/>
+        </g>
+
+        <!-- blossom 3 -->
+        <g transform="translate(370 65) scale(.9)">
+          <circle r="24" fill="#f2c4da"/>
+          <g fill="url(#cherryPetal)">
+            <ellipse cy="-28" rx="25" ry="34"/>
+            <ellipse cx="27" cy="-9" rx="25" ry="34" transform="rotate(72)"/>
+            <ellipse cx="17" cy="25" rx="25" ry="34" transform="rotate(144)"/>
+            <ellipse cx="-17" cy="25" rx="25" ry="34" transform="rotate(216)"/>
+            <ellipse cx="-27" cy="-9" rx="25" ry="34" transform="rotate(288)"/>
+          </g>
+          <circle r="10" fill="#f6d36d"/>
+        </g>
+
+        <!-- blossom 4 -->
+        <g transform="translate(285 100) scale(.68)">
+          <circle r="24" fill="#f2c4da"/>
+          <g fill="url(#cherryPetal)">
+            <ellipse cy="-28" rx="25" ry="34"/>
+            <ellipse cx="27" cy="-9" rx="25" ry="34" transform="rotate(72)"/>
+            <ellipse cx="17" cy="25" rx="25" ry="34" transform="rotate(144)"/>
+            <ellipse cx="-17" cy="25" rx="25" ry="34" transform="rotate(216)"/>
+            <ellipse cx="-27" cy="-9" rx="25" ry="34" transform="rotate(288)"/>
+          </g>
+          <circle r="10" fill="#f6d36d"/>
+        </g>
+      </g>
+
+      <!-- lavender -->
+      <g fill="url(#lav)">
+        <g transform="translate(128 185) rotate(-14)">
+          <ellipse cx="0" cy="0" rx="13" ry="25"/><ellipse cx="-4" cy="25" rx="13" ry="25"/>
+          <ellipse cx="5" cy="50" rx="13" ry="25"/><ellipse cx="-4" cy="75" rx="13" ry="25"/>
+          <ellipse cx="5" cy="100" rx="13" ry="25"/>
+        </g>
+        <g transform="translate(397 178) rotate(14)">
+          <ellipse cx="0" cy="0" rx="13" ry="25"/><ellipse cx="4" cy="25" rx="13" ry="25"/>
+          <ellipse cx="-5" cy="50" rx="13" ry="25"/><ellipse cx="4" cy="75" rx="13" ry="25"/>
+          <ellipse cx="-5" cy="100" rx="13" ry="25"/>
+        </g>
+      </g>
+
+      <!-- crocus -->
+      <g fill="url(#crocus)">
+        <g transform="translate(190 190)">
+          <ellipse cy="-32" rx="22" ry="42"/>
+          <ellipse cx="25" cy="-10" rx="22" ry="42" transform="rotate(55)"/>
+          <ellipse cx="18" cy="25" rx="22" ry="42" transform="rotate(115)"/>
+          <ellipse cx="-18" cy="25" rx="22" ry="42" transform="rotate(245)"/>
+          <ellipse cx="-25" cy="-10" rx="22" ry="42" transform="rotate(305)"/>
+          <circle r="8" fill="#f6d36d"/>
+        </g>
+        <g transform="translate(333 185) scale(.88)">
+          <ellipse cy="-32" rx="22" ry="42"/>
+          <ellipse cx="25" cy="-10" rx="22" ry="42" transform="rotate(55)"/>
+          <ellipse cx="18" cy="25" rx="22" ry="42" transform="rotate(115)"/>
+          <ellipse cx="-18" cy="25" rx="22" ry="42" transform="rotate(245)"/>
+          <ellipse cx="-25" cy="-10" rx="22" ry="42" transform="rotate(305)"/>
+          <circle r="8" fill="#f6d36d"/>
+        </g>
+      </g>
+
+      <!-- wrapping -->
+      <path d="M125 370 L395 370 L350 550 L170 550 Z" fill="url(#paper)" filter="url(#shadow)"/>
+      <path d="M260 375 L260 550" stroke="#c5a9d8" stroke-width="3" opacity=".7"/>
+      <path d="M180 385 Q260 420 340 385" fill="none" stroke="#eee2f5" stroke-width="8"/>
+
+      <!-- ribbon -->
+      <g transform="translate(260 420)">
+        <path d="M0 0 C-35 -30 -65 -8 -48 20 C-35 38 -12 23 0 8Z" fill="#a66cc0"/>
+        <path d="M0 0 C35 -30 65 -8 48 20 C35 38 12 23 0 8Z" fill="#a66cc0"/>
+        <circle r="17" fill="#8c55aa"/>
+        <path d="M-5 15 L-40 62 L-12 49 L2 72 L10 15Z" fill="#a66cc0"/>
+        <path d="M5 15 L40 62 L12 49 L-2 72 L-10 15Z" fill="#a66cc0"/>
+      </g>
+    </svg>
+  </div>
+
+  <p class="flower-note">
+    🌸 Cherry blossoms — for the beauty in your presence.<br>
+    💜 Lavender — for the calm you bring to my world.<br>
+    🪻 Crocus — for happiness, hope, and new little memories.
+  </p>
+
+  <button id="letterBtn">There's a letter for you 💌</button>
+</section>
+
+<section class="screen letter-screen hidden" id="letterSection">
+  <div class="envelope">💌</div>
+
+  <article class="letter">
+    <div class="ornament">♡　♡　♡</div>
+
+    <h2>To my favorite person, Leeanora,</h2>
+
+    <p>Happy GF's Day, Mal. ♡</p>
+
+    <p>
+      First of all I want to say sorry to you po mal.<br>
+      Sorry po kasi, Gf's day na Gf's day tapos nakipag-away agad
+      ako sa'yo, ang aga-aga pa. pag kauwi na pagkauwi mo ganon yung 
+      ibubungad ko sa'yo, sorry po mal hehe 😅🤞💕 
+    </p>
+
+    <p>
+      Sana enough po ito para makabawi po sa'yo. <br>
+      Do you know that my day's not complete kapag hindi ako
+      nakipag-away sa'yo? ngayon alam mo na po hehehe
+      love language ko na 'to. Importante love pa rin kita, always!
+    </p>
+
+    <p>
+      Alam ko na this is just a little website, but mas gusto na gumawa
+      ng something na you would feel a little more special, instead of
+      just saying “Happy GF's Day.”
+    </p>
+
+    <p>
+      kung maibibigay ko lang sa'yo itong bouquet for real po, I'd probably
+      still add more flowers s'yempre kasi ang onti n'yan daw tanga pa yung
+      gumawa, HAHAHAHA. And because one bouquet somehow doesn't feel enough for you.
+    </p>
+
+    <p>
+      Thank you for the little moments po, the random conversations po,
+      the laughs po, and all the simple things that can turn an ordinary
+      day into a special one po.
+    </p>
+
+    <p class="cute">
+      Also, congratulations. ♡<br>
+      You are officially the reason I made
+      an entire website instead of just sending
+      a message. And also you are the reason bakit mas
+      na engganyo ako mag code, let's not forget na 
+      ai lang 'to HAHAHA. Ang tagal kasi kami turuan eh,
+      self study ba naman gawa sa'min HAHAHAHA
+    </p>
+
+    <p>
+      I hope whenever you see this, you remember that you are
+      appreciated, thought of, and very, very special to me.
+      IIII LOVEEEE YOUUUU POOOO MALLLL KOOOO!!!!
+    </p>
+
+    <p class="signature">
+      With lots of love,<br>
+      <strong>Your favorite person, Louiessa ♡</strong>
+    </p>
+
+    <div class="ornament">🌸　💜　🪻</div>
+  </article>
+
+  <button id="musicBtn">♫ Music On</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
